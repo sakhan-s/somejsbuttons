@@ -1,0 +1,178 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 570px) {
+    #fadeshow {
+        display: none;
+    }
+    #mobile {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    #fadeshow {
+        display: none;
+    }
+    #mobile {
+        display: none;
+    }
+}
+
+.mobile {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    float: right;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.moile__item {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.navigation_mobile {
+    position: relative;
+}
+
+.mob__link {
+    color: wheat;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 80%;
+}
+
+body {
+    background-color: #222;
+}
+
+.hiddenly {
+    display: none;
+}
+
+.logo a {
+    color: white;
+    position: relative;
+    top: 0.5rem;
+    font-size: 1.171875rem;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: firebrick;
+}
+
+.navigation_panel {
+    background-color: #303030;
+    height: 90px;
+}
+
+.nav {
+    position: relative;
+    float: right;
+    right: 1rem;
+    top: -1.8rem;
+}
+
+..main--main-bg {
+    color: red;
+}
+
+.intro__btn {
+    background-color: transparent;
+    position: relative;
+    right: -85rem;
+    bottom: 45.5rem;
+}
+
+h2,
+.h2 {
+    font-size: 2.5rem;
+}
+
+.active {
+    color: red;
+}
+
+.nav__item {
+    position: relative;
+    margin-right: 0.6rem;
+    bottom: 1rem;
+    overflow: hidden;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.nav__item a {
+    text-decoration: none;
+}
+
+.nav__item a:hover {
+    color: white;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.main {
+    margin: 10px;
+    min-height: 100%;
+    min-height: 83.1078vh;
+    flex-grow: 1;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: auto;
+    min-width: auto;
+}
+
+.footer {
+    position: relative;
+    bottom: -.5rem;
+    height: 50px;
+    width: 100%;
+    background-color: #303030;
+}
+
+.current_data {
+    position: relative;
+    top: 0.5rem;
+    padding-left: .5rem;
+}
+
+.github_link a {
+    position: relative;
+    float: right;
+    padding-right: .5rem;
+    bottom: 1rem;
+}
+
+.invisible {
+    display: none;
+}
