@@ -6,57 +6,14 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 570px) {
-    #fadeshow {
+@media only screen and (max-width: 515px) {
+    #logo {
         display: none;
     }
-    #mobile {
-        visibility: visible;
-    }
-}
-
-@media only screen and (max-width: 355px) {
-    #fadeshow {
-        display: none;
-    }
-    #mobile {
-        display: none;
-    }
-}
-
-.mobile {
-    visibility: hidden;
-    position: relative;
-    display: inline-block;
-    float: right;
-    top: 1.5rem;
-    right: 1rem;
-}
-
-.moile__item {
-    position: relative;
-    display: inline-block;
-    justify-content: space-between;
-}
-
-.navigation_mobile {
-    position: relative;
-}
-
-.mob__link {
-    color: wheat;
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 1rem;
-    font-size: 80%;
 }
 
 body {
-    background-color: #222;
-}
-
-.hiddenly {
-    display: none;
+    background-color: whitesmoke;
 }
 
 .logo a {
@@ -78,8 +35,50 @@ body {
 }
 
 .navigation_panel {
-    background-color: #303030;
+    background-color: red;
     height: 90px;
+}
+
+.btn-block {
+    position: relative;
+    float: right;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.first-btn:active,
+.second-btn:active,
+.third-btn:active {
+    top: 1px;
+    box-shadow: none;
+}
+
+.first-btn:hover,
+.second-btn:hover,
+.third-btn:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0;
+}
+
+.first-btn,
+.second-btn,
+.third-btn {
+    position: relative;
+    top: -.4rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -1px -1px #000;
+    user-select: none;
+    padding: .4em 1em;
+    outline: none;
+    background-color: red;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 50%, rgba(0, 0, 0, 0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 100% 0, 0 0;
+    box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
+    text-transform: uppercase;
 }
 
 .nav {
@@ -89,7 +88,7 @@ body {
     top: -1.8rem;
 }
 
-..main--main-bg {
+.main--main-bg {
     color: red;
 }
 
@@ -103,27 +102,6 @@ body {
 h2,
 .h2 {
     font-size: 2.5rem;
-}
-
-.active {
-    color: red;
-}
-
-.nav__item {
-    position: relative;
-    margin-right: 0.6rem;
-    bottom: 1rem;
-    overflow: hidden;
-    display: inline-block;
-    justify-content: space-between;
-}
-
-.nav__item a {
-    text-decoration: none;
-}
-
-.nav__item a:hover {
-    color: white;
 }
 
 .text-justify {
