@@ -1,17 +1,26 @@
-var btns = document.getElementsByClassName('butt');
-var par = document.getElementsByClassName('text-justify');
-btns[0].onclick = function() {
-    par[0].classList.remove("invisible");
-    par[1].classList.add("invisible");
-    par[2].classList.add("invisible");
-}
-btns[1].onclick = function() {
-    par[0].classList.add("invisible");
-    par[1].classList.remove("invisible");
-    par[2].classList.add("invisible");
-};
-btns[2].onclick = function() {
-    par[0].classList.add("invisible");
-    par[1].classList.add("invisible");
-    par[2].classList.remove("invisible");
-};
+const block = document.querySelector('.btn-block');
+
+block.addEventListener('click', (event) => {
+    if (event.target.classList.contains('first-btn')) {
+        const maintext = document.getElementsByClassName('text-justify');
+        maintext[0].classList.remove('invisible');
+        maintext[1].classList.add('invisible');
+        maintext[2].classList.add('invisible');
+    }
+})
+block.addEventListener('click', (event) => {
+    if (event.target.classList.contains('second-btn')) {
+        const maintext = document.getElementsByClassName('text-justify');
+        maintext[0].classList.add('invisible');
+        maintext[1].classList.remove('invisible');
+        maintext[2].classList.add('invisible');
+    }
+})
+block.addEventListener('click', (event) => {
+    if (event.target.classList.contains('third-btn')) {
+        const maintext = document.getElementsByClassName('text-justify');
+        maintext[0].classList.add('invisible');
+        maintext[1].classList.add('invisible');
+        maintext[2].classList.remove('invisible');
+    }
+})
